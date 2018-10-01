@@ -1,0 +1,102 @@
+.backend.list {
+
+    .filters {
+        width: 90%;
+        margin: 0px auto;
+
+        a {
+            display: inline-block;
+            background-color: #6b93f1;
+            color: #fff;
+            padding: 5px 10px;
+        }   
+    }
+
+    .n-results {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .sales {
+        margin-top: 30px;
+
+        .sale {
+            width: 90%;
+            margin: 10px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #F3F3F3;
+            border: 1px solid #EEE;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+
+            &.show-paiement {
+                .center .show-more .show { display: none; }
+                .center .show-more .hide { display: inline; }
+                .center .paiement-infos { display: block; }
+            }
+
+            .top {
+                background: #CCC;
+                height: 20px;
+                padding: 10px 10px;
+
+                .id {
+                    float: left;
+                    margin-right: 30px;
+                    font-weight: bold;
+                    line-height: 20px;
+                }
+                .payment_create_time {
+                    float: right;
+                    line-height: 20px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #555;
+                }
+            }
+            .center {
+                padding: 10px;
+
+                div strong {
+                    display: inline-block;
+                    width: 70px;
+                }
+
+                .show-more {
+                    font-size: 12px;
+                    color: #6b93f1;
+                    cursor: pointer;
+                    font-weight: bold;
+                    margin-top: 10px;
+
+                    .hide {
+                        display: none;
+                    }
+                }
+
+                .paiement-infos {
+                    background-color: #fff;
+                    border-radius: 15px;
+                    padding: 10px;
+                    border: 1px dotted #999;
+                    margin-top: 5px;
+                    font-size: 12px;
+                    display: none;
+
+                    & > div {
+                        padding: 2px 0px;
+                        border-top: 1px solid #F3F3F3;
+
+                        &:first-child {
+                            border-top: none;
+                        }
+                    }
+
+                    strong {
+                        width: 105px;
+                    }
+                }
+            }
+        }
+    }
+}

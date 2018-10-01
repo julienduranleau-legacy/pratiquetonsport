@@ -1,0 +1,45 @@
+.backend.limits {
+    .limits {
+        width: 90%;
+        margin: 0px auto;
+
+        .limit {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #F3F3F3;
+            border: 1px solid #EEE;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+
+            .top {
+                background: #CCC;
+                height: 20px;
+                padding: 10px 10px;
+
+                .name {
+                    float: left;
+                    margin-right: 30px;
+                    font-weight: bold;
+                    line-height: 20px;
+                }
+            }
+
+            .center {
+                padding: 10px;
+
+                .total.full {
+                    color: red;
+                }
+                
+                .form {
+                    margin-top: 20px;
+                    
+                    .edit-label {
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,557 @@
+.home {
+    header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 100;
+
+        .logo {
+            float: left;
+            margin-top: 45px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .menu {
+            float: right;
+            padding-top: 55px;
+
+            .item {
+                position: relative;
+                font-family: 'Avenir Black';
+                font-size: 17px;
+                margin-left: 70px;
+                padding: 15px 30px;
+                cursor: pointer;
+                color: #000;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+
+                &::before {
+                    content: '+';
+                    position: absolute;
+                    top: 14px;
+                    left: 13px;
+                }
+
+                &.subscribe {
+                    padding-left: 40px;
+                    background-color: #fff;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        opacity: 1;
+                        background-color: #000;
+                        color: #fff;
+                    }
+                    
+                    &::before {
+                        left: 23px;
+                    }
+                }
+            }
+        }
+    }
+    .zone-intro {
+        position: relative;
+        height: 950px;
+
+        .side-image {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 50%;
+            height: 100%;
+            background-image: url(../../images/intro-side.jpg);
+            background-size: cover;
+            background-position: bottom left;
+        }
+        
+        .content {
+            position: relative;
+            height: 100%;
+
+            .vertical-centered {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                margin-top: -150px;
+                left: 0px;
+
+            }
+
+            h1 {
+                font-size: 50px;
+                font-family: 'Avenir Light';
+                margin: 0px;
+            }
+
+            h2 {
+                font-size: 85px;
+                font-family: 'Avenir Black';
+                margin: 0px;
+            }
+            
+            .bottom-infos {
+                position: absolute;
+                bottom: 70px;
+                left: 0px;
+                width: 100%;
+
+                .contact-infos {
+                    float: left;
+                    font-family: 'Avenir Black';
+                    font-size: 17px;
+
+                    a {
+                        color: #000;
+                    }
+                }
+
+                .social {
+                    float: right;
+                    font-family: 'Avenir Black';
+                    font-size: 17px;
+                    color: #fff;
+
+                    a {
+                        color: #fff;
+
+                        img {
+                            width: 20px;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .zone-goal {
+        position: relative;
+        padding-top: 220px;
+
+        h2 {
+            margin: 0px;
+            font-size: 45px;
+            font-family: 'Avenir Black';
+            float: left;
+            margin-right: 150px;
+            margin-bottom: 50px;
+        }
+        .goal-description {
+            font-size: 18px;
+            line-height: 1.8em;
+        }
+        .list {
+            margin-top: 150px;
+            padding-bottom: 100px;
+
+            .sport {
+                width: 570px;
+                float: left;
+                background-color: #fff;
+                line-height: 0px;
+                margin-bottom: 50px;
+                padding-bottom: 40px;
+                box-shadow: 0px 15px 20px rgba(0,0,0,0.02);
+
+                &:nth-child(even) {
+                    float: right;
+                }
+
+                & > img {
+
+                }
+                .tabs {
+                    position: relative;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-top: -35px;
+
+                    .tab {
+                        padding: 0px 15px;
+                        height: 100%;
+                        float: left;
+                        background-color: #fff;
+                        font-family: 'Avenir Black';
+                        font-size: 13px;
+                        text-transform: uppercase;
+
+                        &.black {
+                            background-color: #000;
+                            color: #fff
+                        }
+                    }
+                }
+                .infos {
+                    line-height: 1.5em;
+                    padding: 0px 45px;
+
+                    h3 {
+                        font-size: 20px;
+                        font-family: 'Avenir Black';
+                        margin: 30px 0px 0px 0px;
+                    }
+                    .price {
+                        font-size: 20px;
+                        font-family: 'Avenir Black';
+                        color: #fbe100;
+                        margin: 0px;
+                    }
+                    .desc {
+                        font-size: 14px;
+                        line-height: 2em;
+
+                        em {
+
+                        }
+                    }
+                    
+                    .school {
+                        font-size: 13px;
+                        font-family: 'Avenir Black';
+                    }
+                }
+            }
+        }
+    }
+
+    .zone-leagues {
+        position: relative;
+        margin-bottom: 160px;
+
+        .wrapper {
+            position: relative;
+        }
+
+        .left {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 50%;
+            background-image: url(../../images/leagues.jpg);
+
+            img {
+                width: 100%;
+            }
+            .text-container {
+                background-color: #fff;
+                position: absolute;
+                bottom: 100px;
+                right: 0px;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+
+                .price {
+                    font-family: 'Avenir Black';
+                    font-size: 50px;
+                    color: #fbe100;
+                    margin: 35px 0px 0px 0px;
+                }
+                .description {
+                    width: 80%;
+                    margin: 5px auto 0px auto;
+                    font-size: 13px;
+                    font-family: 'Avenir Black';
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .right {
+            float: right;
+            width: 50%;
+            
+            .content {
+                padding-left: 90px;
+                width: 520px;
+                padding-top: 120px;
+
+                h2 {
+                    font-size: 45px;
+                    font-family: 'Avenir Black';
+                }
+                .description {
+                    line-height: 2em;
+                    font-size: 18px;
+                }
+                .current-season {
+                    font-size: 18px;
+                    font-family: 'Avenir Black';
+                    margin: 30px 0px;
+
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .other-infos {
+                    font-size: 14px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+
+    .zone-schedule {
+        margin-bottom: 190px;
+
+        .left {
+            width: 370px;
+            float: left;
+
+            h2 {
+                font-size: 45px;
+                font-family: 'Avenir Black';
+                margin: 0px 0px 0px 0px;
+            }
+        }
+        .right {
+            padding-left: 370px;
+
+            .desc {
+                padding: 15px 0px 20px 0px;
+                font-size: 18px;
+                font-family: 'Avenir Black';
+                width: 670px;
+            }
+
+            .list {
+                .item {
+                    margin: 12px 0px;
+                    height: 25px;
+
+                    div {
+                        float: left;
+                        font-size: 18px;
+                    }
+                    .day {
+                        width: 140px;
+                        text-transform: uppercase;
+                        font-family: 'Avenir Black';
+                    }
+                    .time {
+                        width: 180px;
+                        text-transform: uppercase;
+                    }
+                    .sport {
+
+                    }
+                }
+            }
+        }
+    }
+
+    .zone-form {
+        background-color: #fbe100;
+        padding-top: 150px;
+        padding-bottom: 50px;
+
+         .left {
+            width: 370px;
+            float: left;
+
+            h2 {
+                font-size: 45px;
+                font-family: 'Avenir Black';
+                margin: 0px 0px 0px 0px;
+            }
+        }
+        .right {
+            padding-left: 370px;
+
+            .form {
+
+                &.hide {
+                    display: none;
+                }
+
+                .firstname, .lastname, .email {
+                    position: relative;
+                    box-sizing: border-box;
+                    padding: 0px 18px;
+                    background: #fff;
+                    border: none;
+                    height: 55px;
+                    line-height: 55px;
+                    font-size: 18px;
+                    font-family: 'Avenir Book';
+                    border: 2px solid rgba(255,255,255,0);
+
+                    &.error {
+                        border-color: #ff5f5f;
+                    }
+                }
+                .firstname, .lastname {
+                    width: 400px;
+                    float: left;
+                }
+                .lastname {
+                    margin-left: 28px;
+                }
+                .email {
+                    display: block; 
+                    clear: both;
+                    margin-top: 22px;
+                    width: 600px;
+                }
+                .sport-list {
+                    margin-top: 70px;
+
+                    .item {
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 400px;
+                        float: left;
+                        margin-left: 30px;
+                        background-color: #fff;
+                        margin-bottom: 30px;
+                        padding: 30px;
+                        cursor: pointer;
+
+                        &::before {
+                            content: '';
+                            background-color: #000;
+                            width: 0px;
+                            height: 100%;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            transition: width 0.2s;
+                        }
+
+                        &:hover {
+                            &::before {
+                                width: 10px;
+                            }
+                        }
+
+                        &:nth-child(odd) {
+                            margin-left: 0px;
+                        }
+
+                        &.full {
+                            cursor: default;
+
+                            &:hover {
+                                &::before { width: 0px; }
+                            }
+
+                            .name {
+                                color: #DDD
+                            }
+                        }
+
+                        &.active {
+                            background-color: #000;
+                            color: #fff;
+
+                            &::after {
+                                content:'';
+                                background-color: #fff;
+                                background-image: url('../../images/check.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                width: 60px;
+                                height: 100%;
+                            }
+                        }
+
+                        .name {
+                            font-family: 'Avenir Black';
+                            font-size: 20px;
+                            text-transform: uppercase;
+                        }
+                        .price {
+                            font-family: 'Avenir Black';
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            color: #fbe100;
+                        }
+                    }
+                }
+                .paypal-link {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 18px;
+                    font-family: 'Avenir Black';
+                    color: #000;
+                }
+                .star-infos {
+                    margin-top: 40px;
+                    font-family: 'Avenir Black';
+                    font-size: 14px;
+                    font-style: italic;
+                    color: #444;
+                }
+            }
+
+            .form-success, .form-error {
+                display: none;
+
+                &.show {
+                    display: block;
+                }
+
+                p.title {
+                    padding: 15px 0px 20px 0px;
+                    font-size: 18px;
+                    font-family: 'Avenir Black';
+                    width: 670px;
+
+                    a {
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                }
+
+                p.subtitle {
+                    padding: 0px 0px 0px 0px;
+                    font-size: 18px;
+                    font-family: 'Avenir Black';
+                    width: 670px;
+                }
+            }
+        }
+    }
+
+    .zone-comments {
+        .fb-wrapper {
+            width: 1140px;
+            margin: 0px auto;
+            padding: 80px 0px;
+        }
+    }
+
+    footer {
+        background-color: #000;
+        
+        height: 130px; 
+
+        .left {
+            padding-top: 37px;
+            font-family: 'Avenir Black';
+            font-size: 17px;
+            color: #fff;
+
+            a {
+                color: #fff;
+                transition: opacity 0.2s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

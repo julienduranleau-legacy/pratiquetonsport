@@ -1,0 +1,8 @@
+// Prefix a property 
+// Ie: @include prefix(transform, translate(0, 0));
+@mixin prefix($property, $value, $prefixes: (webkit ms moz o)) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}

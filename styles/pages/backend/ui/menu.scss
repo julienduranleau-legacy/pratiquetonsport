@@ -1,0 +1,28 @@
+.backend .menu {
+    background-color: #333;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+
+    a {
+        display: inline-block;
+        color: #fff;
+        background-color: #555;
+        border-radius: 5px;
+        padding: 3px 10px;
+        margin: 6px 2.5px;
+        font-size: 14px;
+
+        &:first-child {
+            margin-left: 5px;
+        }
+
+        &.active {
+            color: #a9c3ff;
+        }
+
+        &.site {
+            float: right;
+            margin-right: 5px;
+        }
+    }
+}
